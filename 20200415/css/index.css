@@ -1,0 +1,44 @@
+html, body {
+    background-color: gainsboro;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: ghostwhite;
+}
+
+.container .column {
+    box-sizing: border-box;
+    width: 280px;
+}
+
+.cloumn .card {
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px 2px gray;
+}
+
+.container .card a {
+    display: block;
+}
+
+.container .card a .lazyImageBox {
+    background: url(../images/default.gif) no-repeat center center gray;
+    overflow: hidden;
+}
+.card a .lazyImageBox img{
+    width:100%;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.card a p{
+    margin-top: 5px;
+	color: #000;
+	font-size: 12px;
+	line-height: 20px;
+}
